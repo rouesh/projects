@@ -1,2 +1,2 @@
 # projects
-# landing pages & other small project
+*landing pages & other small project*
