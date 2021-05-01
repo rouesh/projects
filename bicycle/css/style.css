@@ -42,6 +42,78 @@ input, textarea, select, button {
   }
 
 /* header start */
+
+.header {
+    position: absolute;
+    z-index: 50;
+    width: 100%;
+    left: 0%;
+    top: 35px;
+}
+
+.header__row {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    height: 85px;
+}
+
+
+.menu__list {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.menu__link {
+    text-decoration: none;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: #4d4959;
+}
+
+.menu__list-item {
+    position: relative;
+    padding: 0px 36px;
+}
+
+.menu__list-item::after {
+    content: '';
+    width: 2px;
+    height: 2px;
+    background-color: #4d4959;
+    position: absolute;
+    right: 0%;
+    top: 80%;
+    border-radius: 50%;
+    margin: 0px -2px 0px 0px;
+}
+
+.menu__list-item:nth-child(2)::after, .menu__list-item:last-child::after  {
+    display: none;
+}
+
+.menu__list-item:nth-child(2) {
+    padding: 0px 120px 0px 36px;
+
+}
+
+.menu__list-item:nth-child(3) {
+    padding: 0px 36px 0px 120px;
+}
+
+.header__logo {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 /* header end */
 
 /* main start */
