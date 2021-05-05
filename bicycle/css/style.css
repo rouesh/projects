@@ -345,12 +345,35 @@ input, textarea, select, button {
 .brands__content {
     background-color: #ffffff;
     padding: 70px 68px 55px 68px;
+    position: relative;
 }
 
 .block__text_brands {
     font-size: 18px;
     line-height: 34px;
     text-align: justify;
+}
+
+.block__text_brands::after {
+    content: '';
+    display: block;
+    margin:35px auto 0 auto;
+    width: 50px;
+    height: 1px;
+    background-color: #d7d7d7;
+}
+
+.brands__content::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ffffff;
+    margin: 0 0 0 -10px;
 }
 
 .brands__image {
