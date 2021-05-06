@@ -15,6 +15,7 @@ body {
     line-height: 1.2em;
     color: #848789;
     height: 100%;
+    background-color: #ffffff;
 }
 
 input, textarea, select, button {
@@ -42,9 +43,17 @@ input, textarea, select, button {
       flex-direction: column;
   }
 
-.content {
-}
-
+.ibg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    }
+    
+    .ibg img{
+     display: none;
+        }
+    
 /* header start */
 
 .header {
@@ -261,6 +270,7 @@ input, textarea, select, button {
     background-repeat: no-repeat;
     flex: 1 0 100%;
     position: relative;
+    
 }
 
 /* ==================================  generation =========*/
@@ -446,6 +456,10 @@ input, textarea, select, button {
  
  /* ==================================  slider =========*/
 
+.slider {
+    background-color: #f7f7f7;
+}
+
  .slider__body {
      text-align: center;
      padding: 120px 0px 0px 0px;
@@ -475,14 +489,6 @@ input, textarea, select, button {
     font-style: italic;
     color: #848789;
  }
-
-@media (max-width:1100px) {
-    
-}
-
-@media (max-width:600px) {
-    
-}
 
  .slick-list {
     overflow: hidden;
@@ -556,6 +562,101 @@ input, textarea, select, button {
      }
     
 }
+
+ /* ==================================  shops =========*/
+
+.shop__body {
+    display: flex;
+}
+
+.shop__column {
+    flex: 0 1 16.666%;
+}
+
+.shop__column_big {
+    flex: 0 1 33.333%;
+}
+
+.block-shop__row {
+    display: flex;
+}
+
+.block-shop__col {
+    flex: 0 1 50%;
+}
+
+.bitem {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.bitem__logo {
+    background-color: rgba(100,194,158,0.7);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.bitem:hover .bitem__logo {
+    opacity: 1;
+    visibility: visible;
+}
+
+.bitem__logo-text {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+}
+
+.bitem__img {
+    height: 100%;
+    padding: 0 0 50% 0;
+}
+
+.bitem__img_big {
+    padding: 0 0 200.5% 0;
+}
+
+.bitem__img_l {
+    padding: 0 0 100% 0;
+}
+
+.shop__footer {
+    background-color: #282f35;
+    text-align: center;
+    padding: 75px 0px 75px 0px;
+}
+
+.shop__btn {
+    display: inline-block;
+    height: 50px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 48px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #ffffff;
+    text-decoration: none;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 0 60px;
+}
+
 
 /* main end */
 
