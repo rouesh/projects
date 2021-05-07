@@ -85,6 +85,10 @@ input, textarea, select, button {
     color: #4d4959;
 }
 
+.menu__link:hover {
+    color: #64c29eb3;                    
+}
+
 .menu__list-item {
     position: relative;
     padding: 0px 36px;
@@ -141,6 +145,10 @@ input, textarea, select, button {
     width: 80%;
     height: 3px;
     background-color: #4d4959;
+}
+
+.burger:hover .burger__line {
+    background-color: #64c29eb3;
 }
 
 .burger__line_second {
@@ -202,6 +210,10 @@ input, textarea, select, button {
         transform: translateY(-50%);
         background-color: #bfc1c2;
         z-index: 100;
+    }
+
+    .burger__close:hover .burger__close-line {
+        background-color: #64c29eb3;
     }
 
     .burger__close-line:first-child {
@@ -374,6 +386,21 @@ input, textarea, select, button {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+.item__background {
+    background-color: rgba(100,194,158,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    opacity: 0;
+    visibility: hidden;
+    transition: .3s ease;
+}
+
+.item__link:hover .item__background {
+    opacity: 1;
+    visibility: visible;
 }
 
 .item__logo {
@@ -657,6 +684,10 @@ input, textarea, select, button {
     padding: 0 60px;
 }
 
+.shop__btn:hover {
+    color: #64c29e;
+}
+
 @media (max-width:1400px) {
     .shop__footer {
         padding: 55px 0px 55px 0px;
@@ -761,6 +792,10 @@ input, textarea, select, button {
     border: none;
 }
 
+.subscribe__btn:hover {
+    background-color: #4daf8a;
+}
+
 @media (max-width:750px) {
     .subscribe__body {
         padding: 50px 0px;
@@ -814,6 +849,11 @@ p:first-child {
 .social__link {
     text-decoration: none;
     margin: 0px 7.5px;
+}
+
+.social__link:hover img {
+    transform: scale(1.2);
+    transition: .3s;
 }
 
 .footer__dev.dev {
