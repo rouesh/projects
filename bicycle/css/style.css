@@ -781,4 +781,76 @@ input, textarea, select, button {
 
 /* footer start */
 
+.footer {
+    width: 100%;
+    background-color: #f7f7f7;
+    text-align: center;
+    padding: 100px 0px;
+}
+
+.footer__row {
+    display: flex;
+}
+
+.footer__column {
+    flex: 0 1 33.333%;
+}
+
+.footer__address {
+    font-size: 13.9px;
+    line-height: 17px;
+    font-weight: 400;
+    font-style: italic;
+    color: #848789;
+    text-align: left;
+}
+
+p:first-child {
+    font-size: 16px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.social__link {
+    text-decoration: none;
+    margin: 0px 7.5px;
+}
+
+.footer__dev.dev {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    text-decoration: none;
+}
+
+.dev__text {
+    font-size: 14px;
+    font-style: italic;
+    color: #848789;
+    padding: 0px 9px 0px 0px;
+}
+
+@media (max-width:1100px) {
+    .footer {
+        padding: 50px 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .footer {
+        padding: 30px 0px;
+    }
+    .footer__row {
+       flex-direction: column;
+    }
+    .footer__dev.dev {
+        justify-content: center;
+    }
+    .footer__address {
+        text-align: center;        
+    }
+    .footer__social {
+        margin: 20px 0px;
+    }
+}
 /* footer end */
