@@ -219,6 +219,7 @@ a {
 
 .rest__header {
   flex: 0 1 100%;
+  max-height: 364px;
   background-image: url(/page/img/pushkin.jpg);
   background-position: center;
   background-size: cover;
@@ -226,16 +227,14 @@ a {
   padding: 0px 0px 32.4% 0px;
 }
 
-.main__wrapper {
-    position: relative;
-}
-
 .rest__card {
-    position: absolute;
-    left: 0px;
+    display: inline-block;
+    position: relative;
+    left: 0;
     top: 80px;
     background-color: #ffffff;
-    padding: 37px 37px;
+    padding: 37px 30px;
+    box-shadow: 0 1px 10px #D8D8D8;
 }
 
 .restaurant__title {
@@ -268,6 +267,38 @@ a {
     color: #ffffff;
     padding: 0px 16px;
 }
+
+@media (max-width:768px) {
+    .rest__header {
+        background-image: url(/page/img/pushkin-2.jpg);
+    }
+}
+
+@media (max-width:395px) {
+    .rest__header {
+        background-image: url(/page/img/pushkin-3.jpg);
+    }
+    .rest__card {
+        left: 50%;
+        top: 130px;
+        padding: 24px 30px;
+        transform: translateX(-50%);
+    }
+    .restaurant__title {
+        text-align: center;
+        font-size: 24px;
+        line-height: 28px;
+        padding: 0px 0px 40px 0px;
+    }
+    .restaurant__info {
+        flex-direction: column;
+    }
+    .restaurant__kitchen {
+        padding: 0px 0px 16px 0px;
+    }
+
+}
+
 /*--  -------------------rest end--------------------- --*/
 /*--  -------------------footer start--------------------- --*/
 
