@@ -113,31 +113,64 @@ a {
 }
 /* main end */
 /* main-rest start */
-.rest-header {
-    background: url(/img/pushkin.jpg) top center no-repeat fixed;
-    background-size: 100% auto;
-    background-color: #ffffff;
-    width: 100%;
-    height: 364px;
+.rest {
+    display: flex;
 }
 
-.rest-header__card {
-    background-color: #ffffff;
-    margin: 80px 0 80px 0;
-    padding-top: 38px;
-    padding-bottom: 38px;
-    box-shadow: 0 1px 10px #D8D8D8;
+.rest__header {
+  flex: 0 1 100%;
+  background-image: url(../page/img/pushkin.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0px 0px 32.4% 0px;
 }
 
-.rest-header__card-name {
-    font-weight: normal;
+.container {
+    position: relative;
+}
+
+.rest__cards {
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    background-color: #ffffff;
+    padding: 37px 37px;
+}
+
+
+.restaurant__title {
     font-size: 36px;
-    line-height: 117%;
+    line-height: 42px;
     color: #1D1D1D;
+    padding: 0px 0px 54px 0px;
 }
 
+.restaurant__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: transparent;
+}
 
+.restaurant__kitchen {
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    color: #626262;
+}
 
+.restaurant__time {
+    background: #262626;
+    border-radius: 16px;
+    font-size: 13px;
+    line-height: 32px;
+    color: #ffffff;
+    padding: 0px 16px;
+    
+    
+}
 
 
 /* main-rest end */
