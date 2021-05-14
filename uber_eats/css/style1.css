@@ -528,6 +528,7 @@ a {
     background-color: #262626;
     color: #ffffff;
     position: relative;
+    margin-top: 60px;
 }
 
 .footer__logo-img {
@@ -618,6 +619,12 @@ a {
     margin-bottom: 40px;
 }
 
+@media (max-width:768px) {
+    .footer {
+        margin-top: 48px;
+    }
+}
+
 @media (max-width:630px) {
     .footer__social-lang-input {
         width: 100%;
@@ -646,6 +653,9 @@ a {
 }
 
 @media (max-width:350px) {
+    .footer {
+        margin-top: 40px;
+    }
     .footer__app-link {
         padding: 0px 5px;
     }
