@@ -309,25 +309,19 @@ a {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    cursor: pointer;
 }
 
 .menu-list__item {
     padding: 0px 40px 0px 0px;
+    font-size: 16px;
+    line-height: 75px;
+    color: #626262;
+    box-sizing: border-box;
 }
 
 .menu-list__item:last-child {
     padding: 0px 0px 0px 0px;
-}
-
-.menu-list__item:hover .menu-list__link{
-    color: #327430;
-}
-
-.menu-list__link {
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 75px;
-    color: #626262;
 }
 
 @media (max-width:635px) {
@@ -351,11 +345,6 @@ a {
     color: #1D1D1D;
     margin-top: 56px;
     padding: 0px 0px 32px 0px;
-}
-
-.menu__title::after {
-    content: '';
-    border: 2ps solid green;
 }
 
 .menu__container-cadrs {
@@ -434,23 +423,69 @@ a {
         flex: 0 1 100%;
         padding: 16px 0px;
     }
+    .card__info {
+        visibility: visible;
+    }
 
 }
 
-@media (max-width:340px) {
+@media (max-width:530px) {
     .menu__title {
         text-align: center;
-        padding: 0px 0px 32px 0px;
+        padding: 0px 0px 12px 0px;
     }
 
     .menu__title::after {
         content: '';
-        border: 2ps solid green;
+        display: block;
+        width: 50px;
+        height: 1px;
+        background-color: #327430;
+        margin: 0 auto 43px;
     }
 
+    .card__body {
+        overflow: scroll;
+    }
+}
+
+@media (max-width:385px) {
     .card__link {
         border: none;
         border-bottom: 1px solid #e8e8e8;
+    }
+
+    .card__body {
+        padding: 0px;
+    }
+
+    .card__image {
+        flex: 0 1 100px;
+    }
+    
+    .card__image img {
+        width: 100px;
+        height: 100%;
+    }
+
+    .card__info {
+        padding: 0px 0px 40px 0px;
+    }
+
+    .card__cost {
+        left: 0px;
+        bottom: 16px;
+    }
+
+}
+
+@media (max-width:285px) {
+    .menu__title {
+        margin-top: 76px;
+    }
+
+    .menu__title::after {
+        margin: 0 auto 23px;
     }
 }
 
@@ -460,10 +495,29 @@ a {
 .slick-list {
     overflow: hidden;
 }
+
  .slick-track {
     display: flex;
     align-items: flex-start;
+    flex-wrap: nowrap;
+    width: 100%;
  }
+
+.slick-track li {
+    width: auto !important;
+}
+
+.slider-nav .slick-list {
+    padding: 0px !important;
+}
+
+ .slider-nav .slick-current {
+    color: #327430;
+}
+
+.slider-nav .slick-list {
+    width: 100%;
+}
 
 /*--  -------------------rest slider end--------------------- --*/
 /*--  -------------------rest end--------------------- --*/
