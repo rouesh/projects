@@ -1,0 +1,174 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'PT Sans';
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #000000;
+}
+
+input, textarea, select, button {
+    font-family: inherit;
+  }
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 888px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*--  -------------------header start--------------------- --*/
+
+.header {
+    padding: 26px 0px 33px 0px;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-top__lang {
+}
+
+.header-top__lang-item {
+    font-family: 'Bebas';
+    font-size: 11px;
+    line-height: 19px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    text-decoration: underline;
+    color: #000000;
+    margin: 0px 5px 0px 0px;
+    padding: 4px;
+}
+
+.header-top__lang-item_select {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.header-top__ordering {
+    font-family: 'AkzidenzGrotesk';
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-bottom__column {
+
+}
+
+.header-bottom__column_center {
+    margin-top: -25px;
+}
+
+.header-bottom__menu {
+}
+
+.menu {
+
+}
+
+.menu__list {
+    display: flex;
+    margin-top: -21px;
+    justify-content: space-between;
+}
+
+.menu__item {
+    padding: 0px 45px 0px 0px;
+}
+
+.menu__item_b {
+    padding: 0px 52px 0px 0px;
+}
+
+.menu__item:last-child {
+    padding: 0px 0px 0px 0px;
+}
+
+.menu__link {
+    font-family: 'AkzidenzGrotesk';
+    font-size: 15px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+}
+
+
+.header-bottom__logo {
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo__text {
+    font-family: 'Bebas';
+    font-size: 9px;
+    line-height: 25px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.8em;
+    color: #000000;
+}
+
+.logo__text_top {
+    letter-spacing: 0.6em;
+}
+
+.logo__image {
+    padding: 8px 0px 13px 0px;
+}
+
+@media (max-width:860px) {
+    .header-bottom {
+        justify-content: space-around;
+    }
+    .menu__item {
+        padding: 0px 25px 0px 0px;
+    }
+    .menu__item_b {
+        padding: 0px 28px 0px 0px;
+    }
+    
+}
+
+
+@media (max-width:765px) {
+    
+}
+/*--  -------------------header end--------------------- --*/
+/*--  -------------------main start--------------------- --*/
+/*--  -------------------main end--------------------- --*/
+/*--  -------------------footer start--------------------- --*/
+/*--  -------------------footer end--------------------- --*/
