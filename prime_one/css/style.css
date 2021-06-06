@@ -662,6 +662,63 @@ a {
     }
     
 }
+
+.main__choice{
+    background-color: #ebebeb;
+    padding: 0px 0px 50px 0px;
+} 
+
+.choice{
+}
+
+.choice__wrapper-cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.choice__card{
+    flex: 1 0 50%;
+    padding: 50px 0px 0px 0px;
+}
+
+.card{
+    display: flex;
+}
+
+.card__image {
+    flex: 1 0 23%;
+    width: 100px;
+    height: 100px;
+}
+
+.card__container{
+    flex: 1 0 77%;
+    padding: 0px 10px;
+}
+
+.card__title{
+    font-family: 'AkzidenzGrotesk';
+    font-size: 25px;
+    line-height: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+    padding: 0px 0px 25px 0px;
+}
+
+.card__text{
+}
+
+@media (max-width:850px) {
+    .card__title{
+        font-family: 'AkzidenzGrotesk';
+        font-size: 20px;
+        line-height: 20px;
+        padding: 0px 0px 15px 0px;
+    }
+    
+}
+
 /*--  -------------------main end--------------------- --*/
 /*--  -------------------footer start--------------------- --*/
 /*--  -------------------footer end--------------------- --*/
