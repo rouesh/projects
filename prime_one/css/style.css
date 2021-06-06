@@ -346,9 +346,6 @@ a {
 
 .section__block {
     flex: 1 0 50%;
-}
-
-.block{
     padding: 5% 63px 73px 63px;
 }
 
@@ -406,7 +403,7 @@ a {
 }
 
 @media (max-width:860px) {
-    .block{
+    .section__block{
         padding: 5% 33px 43px 33px;
     }
     .block__title {
@@ -420,7 +417,7 @@ a {
 }
 
 @media (max-width:765px) {
-    .block{
+    .section__block{
         padding: 5% 23px 33px 23px;
     }
     .block__text { 
@@ -457,7 +454,7 @@ a {
 }
 
 @media (max-width:440px) {
-    .block{
+    .section__block{
         padding: 5% 10px 15px 10px;
     }
     .block__btn-quote {
@@ -472,6 +469,7 @@ a {
 
 .main__catering-cards {
     margin-top: 8.3%;
+    padding: 0px 0px 72px 0px;
 }
 
 .catering-card {
@@ -542,11 +540,16 @@ a {
         justify-content: center;
         align-items: center;
     }
+
     .section_l {
         flex-direction: row-reverse;
         justify-content: space-between;
         width: 100%;
         padding: 0px 0px 20px 0px;
+    }
+
+    .section_l:last-child {
+        padding: 0px 0px 0px 0px;
     }
 
     .section_rev {
@@ -557,7 +560,6 @@ a {
     .section__image_l {
         flex: 1 0 40%;
         padding: 0 0 30% 0;
-        
     }
     .section__block_l{
         flex: 1 0 60%;
@@ -601,7 +603,6 @@ a {
 
 @media (max-width:500px) {
     .block__title_l {
-        
         width: 80%;
     }
     .block__text_l {
@@ -610,6 +611,57 @@ a {
     }
 }
 
+.section_second {
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.section__image_second {
+    flex: 1 0 50%;
+    padding: 0 0 11% 0;
+}
+
+.section__block_second {
+    flex: 1 0 50%;
+    padding: 0px 60px 0px 0px;
+}
+
+.block__title_second {
+    padding: 0px 0px 0px 0px;
+    text-align: right;
+    margin-top: 0px;
+}
+
+@media (max-width:850px) {
+    .main__catering-cards {
+        padding: 0px 0px 42px 0px;
+    }
+    .section__block_second {
+        padding: 0px 30px 0px 0px;
+    }
+}
+
+@media (max-width:700px) {
+    .main__catering-cards {
+        padding: 0px 0px 22px 0px;
+    }
+    .section__block_second {
+        padding: 5px 10px 5px 5px;
+    }
+    .block__title_second {
+        font-size: 30px;
+    }
+}
+
+@media (max-width:500px) {
+    .section_second {
+        flex-direction: column;
+    }
+    .section__image_second {
+        display: none;
+    }
+    
+}
 /*--  -------------------main end--------------------- --*/
 /*--  -------------------footer start--------------------- --*/
 /*--  -------------------footer end--------------------- --*/
