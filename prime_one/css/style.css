@@ -709,10 +709,6 @@ a {
 
 }
 
-.card__text{
-    
-}
-
 @media (max-width:850px) {
     .card__title{
         font-size: 20px;
@@ -738,10 +734,132 @@ a {
     .choice__card {
         margin: 0 auto;
     }
-    
+}
+@media (max-width:600px) {
+    .main__choice {
+        padding: 25px 0px 25px;
+    }
 }
 
+.contacts__title {
+    font-family: 'AkzidenzGrotesk';
+    font-size: 50px;
+    line-height: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+    margin-top: 73px;
+}
 
+.contacts__body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacts__column {
+    flex: 0 1 50%;
+}
+
+.contacts__card {
+    padding: 0px 0px 0px 29px;
+    margin-top: 21px;
+    display: inline-block;
+}
+
+.contacts__card_1 {
+    background-image: url(/img/vv_1387.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.contacts__card_2 {
+    background-image: url(/img/email_1379.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 0px 0px 0px 40px;
+}
+
+.contacts__card_3 {
+    background-image: url(/img/telephone_1380.png);
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.contacts__card-text {
+    font-size: 15px;
+    color: #000000;
+    line-height: 27px;
+    vertical-align: middle;
+}
+
+.sup {
+    font-size: 10px;
+    vertical-align: super;
+}
+
+.contacts__social {
+    padding: 24px 0px 0px 0px;
+}
+
+.social__item {
+    padding: 0px 30px 0px 0px;
+}
+
+.social__item:last-child {
+    padding: 0px 0px 0px 0px;
+}
+
+.social__img {
+    width: 24px;
+    height: 24px;
+}
+
+@media (max-width:850px) {
+    .contacts__title {
+        margin-top: 40px;
+    }
+    .contacts__card {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width:765px)  {
+    .contacts__title {
+        margin-top: 30px;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .contacts__body {
+        margin: 0px 30%;
+    }
+    .contacts__column {
+        flex: 0 1 100%;
+    }
+    .contacts__card {
+        margin-top: 5px;
+        padding: 0px 0px 0px 35px;
+    }
+    .contacts__card-text {
+        font-size: 13px;
+    }
+    .contacts__social {
+        padding: 16px 0px 0px 0px;
+    }
+}
+
+@media (max-width:600px) {
+    .contacts__body {
+        margin: 0px 25%;
+    }
+    .social__item {
+        padding: 0px 10px 0px 0px;
+    }
+}
+@media (max-width:350px) {
+    .contacts__body {
+        margin: 0px 10%;
+    }
+}
 /*--  -------------------main end--------------------- --*/
 /*--  -------------------footer start--------------------- --*/
 /*--  -------------------footer end--------------------- --*/
