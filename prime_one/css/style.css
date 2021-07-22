@@ -860,6 +860,117 @@ a {
         margin: 0px 10%;
     }
 }
+
+.main__map {
+    margin-top: 24px;
+}
+
+.map {
+    display: flex;
+    background-color: #000000;
+}
+
+.map__block {
+    flex: 1 0 50%;
+    padding: 0 0 34.8% 0;
+}
+
+.map__block-image {
+}
+
+.map__block-form {
+    flex: 1 0 50%;
+}
+
+.form {
+    padding: 50px 60px 50px 60px;
+}
+
+.form__title {
+    font-family: 'AkzidenzGrotesk';
+    font-size: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    padding: 0px 0px 21px 0px;
+}
+
+.form__body {
+    display: flex;
+    flex-direction: column;
+    max-width: 375px;
+}
+
+.form__body-name {
+    border: 2px solid #959595;
+    background-color: #252525;
+    font-family: 'PT Sans';
+    font-size: 15px;
+    color: #959595;
+    padding: 13px;
+    margin-bottom: 25px;
+}
+
+.form__body-contact {
+    border: 2px solid #959595;
+    background-color: #252525;
+    font-family: 'PT Sans';
+    font-size: 15px;
+    color: #959595;
+    padding: 13px;
+    margin-bottom: 25px;
+}
+
+.form__body-massage {
+    border: 2px solid #959595;
+    background-color: #252525;
+    font-family: 'PT Sans';
+    font-size: 15px;
+    color: #959595;
+    height: 100px;
+    padding: 13px;
+    margin-bottom: 25px;
+    resize: none;
+}
+
+.form__body-btn {
+    font-family: Bebas;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #000000;
+    background-color: #ffffff;
+    line-height: 50px;
+    padding: 0px 10px;
+    width: 155px;
+}
+
+@media (max-width:765px)  {
+    .map {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:600px)  {
+    .form {
+        padding: 30px 43px 30px 43px;
+    }
+    .form__body-btn {
+        font-size: 12px;
+        line-height: 35px;
+        width: 145px;
+        padding: 0px 7px;
+    }
+    .form__body-name {
+        padding: 10px;
+    }
+    .form__body-contact {
+        padding: 10px;
+    }
+    .form__body-massage {
+        padding: 10px;
+    }
+}
+
 /*--  -------------------main end--------------------- --*/
 /*--  -------------------footer start--------------------- --*/
 /*--  -------------------footer end--------------------- --*/
