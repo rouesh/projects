@@ -220,7 +220,7 @@ a {
 .rest__header {
   flex: 0 1 100%;
   max-height: 364px;
-  background-image: url(/page/img/pushkin.jpg);
+  background-image: url(../page/img/pushkin.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,13 +270,13 @@ a {
 
 @media (max-width:768px) {
     .rest__header {
-        background-image: url(/page/img/pushkin-2.jpg);
+        background-image: url(../page/img/pushkin-2.jpg);
     }
 }
 
 @media (max-width:395px) {
     .rest__header {
-        background-image: url(/page/img/pushkin-3.jpg);
+        background-image: url(../page/img/pushkin-3.jpg);
     }
     .rest__card {
         left: 50%;
@@ -567,7 +567,7 @@ a {
     border-bottom: none;
     color: #ffffff;
     font-size: 13px;
-    background: #3b3b3b url(/img/world.svg) no-repeat left center;
+    background: #3b3b3b url(../img/world.svg) no-repeat left center;
     background-size: 16px;
     padding-left: 32px;
     margin-bottom: 33px;

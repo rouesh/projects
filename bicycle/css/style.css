@@ -276,7 +276,7 @@ input, textarea, select, button {
 /* main start */
 
 .main-screen {
-    background-image: url(/img/bg_main.jpg);
+    background-image: url(../img/bg_main.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -361,7 +361,7 @@ input, textarea, select, button {
 }
 
 .brands__item {
-    background-image: url(/img/brands/rectangle_1_54.jpg);
+    background-image: url(../img/brands/rectangle_1_54.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -372,14 +372,14 @@ input, textarea, select, button {
 }
 
 .brands__item_rev {
-    background-image: url(/img/brands/rectangle_1_copy_5_61.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_5_61.jpg);
 }
 
 .brands__item_last-first {
-    background-image: url(/img/brands/rectangle_1_copy_6_63.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_6_63.jpg);
 }
 .brands__item_last-second {
-    background-image: url(/img/brands/rectangle_1_copy_6_64.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_6_64.jpg);
 }
 
 .item__link {
@@ -465,7 +465,7 @@ input, textarea, select, button {
 }
 
 .brands__image {
-    background-image: url(/img/brands/rectangle_1_copy_2_56.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_2_56.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -474,11 +474,11 @@ input, textarea, select, button {
 }
 
 .brands__image_rev {
-    background-image: url(/img/brands/rectangle_1_copy_3_59.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_3_59.jpg);
 }
 
 .brands__image_last {
-    background-image: url(/img/brands/rectangle_1_copy_6_65.jpg);
+    background-image: url(../img/brands/rectangle_1_copy_6_65.jpg);
 }
  
  /* ==================================  slider =========*/
