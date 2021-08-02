@@ -767,20 +767,20 @@ a {
 }
 
 .contacts__card_1 {
-    background-image: url(/img/vv_1387.png);
+    background-image: url(../img/vv_1387.png);
     background-repeat: no-repeat;
     background-position: left;
 }
 
 .contacts__card_2 {
-    background-image: url(/img/email_1379.png);
+    background-image: url(../img/email_1379.png);
     background-repeat: no-repeat;
     background-position: left;
     padding: 0px 0px 0px 40px;
 }
 
 .contacts__card_3 {
-    background-image: url(/img/telephone_1380.png);
+    background-image: url(../img/telephone_1380.png);
     background-repeat: no-repeat;
     background-position: left;
 }
