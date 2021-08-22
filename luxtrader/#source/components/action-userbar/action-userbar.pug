@@ -1,11 +1,13 @@
 .b-header__action-userbar.action-userbar
-  img.action-userbar__icon(src="../../../img/action-userbar-1.png" alt="Пользовательское меню")
-  ul.action-userbar__list
-    li.action-userbar__item
-      a.action-userbar__link(href="rouesh/page") Выбор региона
-    li.action-userbar__item
-      a.action-userbar__link(href="rouesh/page") Личный кабинет
-    li.action-userbar__item
-      a.action-userbar__link(href="rouesh/page") Мои ставки
-    li.action-userbar__item
-      a.action-userbar__link(href="rouesh/page") Мои лоты
+  a.action-userbar__link(href="rouesh/page")
+    img.action-userbar__icon(src="../../../img/action-userbar-1.png" alt="Пользовательское меню")
+  .action-userbar__menu
+    ul.action-userbar__list
+      li.action-userbar__item.action-userbar__item_back1
+        a.action-userbar__item-link(href="rouesh/page") Выбор региона
+      li.action-userbar__item.action-userbar__item_back2
+        a.action-userbar__item-link(href="rouesh/page") Личный кабинет
+      li.action-userbar__item.action-userbar__item_back3
+        a.action-userbar__item-link(href="rouesh/page") Мои ставки
+      li.action-userbar__item.action-userbar__item_back4
+        a.action-userbar__item-link(href="rouesh/page") Мои лоты

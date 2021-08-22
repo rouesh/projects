@@ -1,19 +1,90 @@
 .b-header__action-userbar{}
-.action-userbar{}
-.action-userbar__icon{}
 
-.action-userbar__icon::after{
-  content: '';
-  width: 50px;
-  height: 50px;
-  transform: rotate(90deg);
-  border: 2px solid green; 
+.action-userbar{
+  position: relative;
 }
 
-.action-userbar__icon{}
+.action-userbar__wrap{}
+.action-userbar__icon{
+  padding: 0px 10px 0px 0px;
+}
+
+.action-userbar__link{
+  display: inline-block;
+  position: relative;
+}
+
+.action-userbar__link::after, .action-userbar__link::before{
+  content: '';
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  transform: rotate(45deg);
+  border: 2px solid #bb9c66;
+}
+
+.action-userbar__link::after{
+  border-bottom: transparent;
+  border-right: transparent;
+  position: absolute;
+  bottom: 65%;
+  left: 78%;
+  border-image: linear-gradient(top left, #d2d2d2 0%, #bb9c66 10%);
+  border-image-slice: 1;
+}
+
+.action-userbar__link::before{
+  border-top: transparent;
+  border-left: transparent;
+  position: absolute;
+  top: 40%;
+  left: 78%;
+  border-image: linear-gradient(top left, #d2d2d2 0%, #bb9c66 85%);
+  border-image-slice: 1;
+}
+
+.action-userbar__menu{
+  position: absolute;
+  top: 210%;
+  right: -50%;
+  background-color: #1c242a;
+  min-width: 150px;
+  padding: 10px 10px;
+}
 
 .action-userbar__list {
-  display: none;
 }
+
 .action-userbar__item{}
-.action-userbar__link{}
+
+.action-userbar__item_back1{
+  background-image: url('../../../img/action-userbar-back1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.action-userbar__item_back2{
+  background-image: url('../../../img/action-userbar-back1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.action-userbar__item_back3{
+  background-image: url('../../../img/action-userbar-back1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.action-userbar__item_back4{
+  background-image: url('../../../img/action-userbar-back1.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.action-userbar__item-link{
+  padding: 0px 0px 0px 30px;
+  font-family: 'pfd';
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+}
